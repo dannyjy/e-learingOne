@@ -1,0 +1,64 @@
+article{
+    display: grid;
+    justify-items: center;
+}
+.CardsHeading{
+    padding: 2rem 0rem;
+}
+.CardsHeading::after{
+    
+}
+
+.CoursesCard{
+    width: 300px;
+    height: 350px;
+    display: grid;
+    overflow: hidden;
+    border-radius: 1rem;
+    background: #e3e3;
+    grid-template-rows: 1fr .3fr;
+}
+.CoursesCard .UpperDiv{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+.UpperDiv button{
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: .5rem .8rem;
+    background: #003262;
+}
+.CoursesCard .LowerDiv{
+    padding: .5rem 1rem;
+}
+.CoursesCard .LowerDiv .modules{
+    padding: .5rem 0rem;
+    gap: .5rem;
+    display: flex;
+}
+.CoursesCard .LowerDiv .rate{
+    gap: .5rem;
+    display: flex;
+    color: #bba212e5;
+}
+.Card1{
+}
+
+.Card1 .OnlineCardS, .Card2 .CommentsCards{
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Card2 .CommentsCards{
+
+}
+.StuComments{
+    width: 300px;
+}
