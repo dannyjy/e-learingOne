@@ -5,21 +5,21 @@ import { IoBagHandleOutline } from "react-icons/io5";
 export default function Section(){
     const onlineCourses = [
         {
-            BgImage: "src/assets/blackmanPc.jpg",
+            BgImage: "public/blackmanPc.jpg",
             HeaderOne: "UI/Ux Designing",
             HeaderTwo: "Training Course",
             MOdule: "11",
             Rate: "4.7"
         },
         {
-            BgImage: "src/assets/ladyPc.jpg",
+            BgImage: "public/ladyPc.jpg",
             HeaderOne: "Full Stack",
             HeaderTwo: "Development Course",
             MOdule: "15",
             Rate: "4.5"
         },
         {
-            BgImage: "src/assets/whitemanPc.jpg",
+            BgImage: "public/whitemanPc.jpg",
             HeaderOne: "Digital Marketing &",
             HeaderTwo: "E-Commerce",
             MOdule: "9",
@@ -28,31 +28,31 @@ export default function Section(){
     ];
     const Comments = [
         {
-            BgImage:"src/assets/blackmanPc.jpg",
+            BgImage:"public/blackmanPc.jpg",
             Name: "Steve Smith",
             Course:"Associate UI/UX Designer"
 
         },
         {
-            BgImage:"src/assets/whitemanPc.jpg",
+            BgImage:"public/whitemanPc.jpg",
             Name: "Kautuk Mestri",
             Course:"Full Stack Developer"
         },
         {
-            BgImage:"src/assets/ladyPc.jpg",
+            BgImage:"public/ladyPc.jpg",
             Name: "Devika Gada",
             Course:"Social Media Strategist"
         }
     ];
     const Blog = [
         {
-            BgImage: "src/assets/blackmanPc.jpg"
+            BgImage: "public/blackmanPc.jpg"
         },
         {
-            BgImage: "src/assets/whitemanPc.jpg"
+            BgImage: "public/whitemanPc.jpg"
         },
         {
-            BgImage: "src/assets/ladyPc.jpg"
+            BgImage: "public/ladyPc.jpg"
         }
     ]
     return(

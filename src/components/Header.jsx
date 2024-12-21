@@ -60,7 +60,7 @@ function Main(){
             <div className="ImageContainer">
                 <div className='ImageBg'>
                     <section>
-                        <img src="src/assets/womanOnPc.png" alt="" />
+                        <img src="public/womanOnPc.png" alt="" />
                     </section>
                 </div>
             </div>
