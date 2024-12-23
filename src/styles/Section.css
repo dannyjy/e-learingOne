@@ -3,22 +3,37 @@ article{
     justify-items: center;
 }
 .CardsHeading{
+    padding-bottom: 2rem;
+}
+.Card1, .Card3{
+    margin-bottom: 4rem;
+}
+.Card2Body{
+    width: 100%;
+    display: grid;
+    margin-bottom: 4rem;
+    background: #e3e3e3;
+    justify-content: center;
+}
+.Card2{
     padding: 2rem 0rem;
 }
-.CardsHeading::after{
-    
+.CardsHolder{
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.CoursesCard{
+.CoursesCard, .Blogs{
     width: 300px;
-    height: 350px;
+    height: 360px;
     display: grid;
     overflow: hidden;
     border-radius: 1rem;
     background: #e3e3;
     grid-template-rows: 1fr .3fr;
 }
-.CoursesCard .UpperDiv{
+.UpperDiv{
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -33,32 +48,48 @@ article{
     padding: .5rem .8rem;
     background: #003262;
 }
-.CoursesCard .LowerDiv{
-    padding: .5rem 1rem;
-}
-.CoursesCard .LowerDiv .modules{
-    padding: .5rem 0rem;
+.modules, .profileDetails{
     gap: .5rem;
     display: flex;
+    align-items: center;
+    padding: .5rem 0rem;
 }
-.CoursesCard .LowerDiv .rate{
+.rate{
     gap: .5rem;
     display: flex;
     color: #bba212e5;
 }
-.Card1{
-}
 
-.Card1 .OnlineCardS, .Card2 .CommentsCards{
-    gap: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.Card2 .CommentsCards{
-
-}
 .StuComments{
     width: 300px;
+}
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.LowerDiv{
+    padding: .5rem 1rem;
+}
+.LowerDiv section{
+    display: flex;
+    padding-bottom: .5rem;
+    justify-content: space-between;
+}
+.LowerDiv .readMore{
+    color: #003262;
+    padding: .5rem 0rem;
+}
+@media (width <= 700px) {
+    .CardsHolder{
+        /* justify-content: flex-start; */
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .CardsHolder::-webkit-scrollbar{
+        display: none;
+    }
 }

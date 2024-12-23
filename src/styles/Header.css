@@ -22,6 +22,12 @@ body{
     display: flex;
     align-items: center;
 }
+.Nav .child1 h1{
+    color: #ffae00;
+}
+.Nav .child1 h1 span{
+    color: #4e4be2;
+}
 .Nav .child1 .ChoiceSearch {
     gap: 2rem;
     display: flex;
@@ -33,7 +39,7 @@ body{
     outline: none;
     color: #fff;
     border-radius: 5px;
-    background: #003262;
+    background: #4e4be2;
 }
 .ChoiceSearch div{
     display: flex;
@@ -52,17 +58,17 @@ body{
     color: #fff;
     font-size: 1.5rem;
 }
-.Nav .child2{
+.Nav .child2, .Nav .ListRespon{
     gap: 1rem;
     display: flex;
     align-items: center;
 }
-.Nav .child2 ul{
+.Nav .child2 ul,.Nav .ListRespon ul{
     gap: 2rem;
     display: flex;
     list-style: none;
 }
-.Nav .child2 ul li a{
+.Nav .child2 ul li a, .Nav .ListRespon ul li a{
     color: #000;
     text-decoration: none;
 }
@@ -73,22 +79,22 @@ body{
     font-size: 1rem;
     border-radius: 5px;
     padding: .8rem 1rem;
-    background: #003262;
+    background: #4e4be2;
 }
 .Nav .child2 .btn1{
     background: none;
-    color: #003262;
+    color: #4e4be2;
 }
 .main{
-    gap: 4rem;
     display: flex;
-    padding: 5rem 0rem;
+    padding: 2.5rem 0rem;
+    position: relative;
     align-items: center;
-    justify-content: center;
     background: #e3e3e3;
+    justify-content: center;
 }
 .main .TextContainer{
-    width: 500px;
+    width: 50%;
 }
 .main .TextContainer h1{
     font-size: 3rem;
@@ -103,27 +109,25 @@ body{
     font-size: 1rem;
     border-radius: 5px;
     padding: .8rem 1rem;
-    background: #003262;
+    background: #4e4be2;
 }
 .main .ImageContainer{
-    width: 400px;
+    width: 40%;
     display: flex;
-    position: relative;
     align-items: center;
     justify-content: center;
 }
 .main .ImageContainer .ImageBg{
     width: 350px;
     height: 350px;
+    display: flex;
+    align-items: end;
     border-radius: 50%;
-    position: absolute;
     background: #b7d0ed;
 }
 .main .ImageContainer .ImageBg section{
-    top: 10%;
     width: 300px;
     height: 300px;
-    position: absolute;
     border-radius: 50%;
     background: #e2d0f1;
 }
@@ -132,13 +136,161 @@ body{
     height: 280px;
 }
 .Base{
-    padding: 3rem 0rem;
+    padding: 2.5rem 0rem;
    text-align: center;
 }
-.Base div{
+.Base h2 span{
+    color: #4e4be2;
+}
+.Base .Logs{
     gap: 2.5rem;
     display: flex;
-    padding-top: 2rem;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
     align-items: center;
     justify-content: center;
+}
+.Base .Logs .img{
+    width: 110px;
+    mix-blend-mode: multiply;
+}
+.slack{
+    display: flex;
+    align-items: center;
+}
+.slack img{
+    width: 70px;
+}
+.Base .Logs .h1{
+    font-size: 2.2rem;
+    color: #4e4be2;
+}
+.MenuICon{
+    font-size: 1.8rem;
+    display: none;
+}
+
+@media (width <= 1150px) {
+    .ChoiceSearch div input{
+        width: 100px;
+    }
+}
+@media (width <= 980px) {
+    .Nav{
+        padding: 1rem;
+    }
+    .Courses{
+        display: none;
+    }
+    .MenuICon{
+        display: block;
+    }
+    .Nav .child2{
+        display: none;
+    }
+    .menuList, .Nav .ListRespon{
+        top: 70px;
+        z-index: 1;
+        right: 10px;
+        padding: 1rem;
+        display: block;
+        position: absolute;
+        background: #333;
+        border-radius: .4rem;
+    }
+    .Nav .ListRespon ul{
+        display: block;
+    }
+    .Nav .ListRespon ul li a{
+        padding: .8rem 1rem;
+    }
+    .main{
+        gap: 1rem;
+    }
+    .main .TextContainer h1{
+        font-size: 2.7rem;
+    }
+    .main .TextContainer p{
+        font-size: 1.1rem;
+    }
+    .main .ImageContainer .ImageBg{
+        width: 320px;
+        height: 320px;
+    }
+    .main .ImageContainer .ImageBg section{
+        width: 280px;
+        height: 280px;
+    }
+    .main .ImageContainer img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (width <= 750px){
+    .main .TextContainer h1{
+        font-size: 2.5rem;
+    }
+    .main .TextContainer p{
+        font-size: .9rem;
+    }
+    .main .ImageContainer .ImageBg{
+        width: 300px;
+        height: 300px;
+    }
+    .main .ImageContainer .ImageBg section{
+        width: 260px;
+        height: 260px;
+    }
+    .main .ImageContainer img{
+        width: 230px;
+        height: 230px;
+    }
+    .Base .Logs{
+        gap: .8rem;
+    }
+}
+@media (width <= 650px){
+    .ChoiceSearch div{
+        display: none;
+    }
+    .main .TextContainer{
+        width: 100%;
+        padding: 0rem 2.5rem;
+    }
+    .main .TextContainer h1{
+        font-size: 2.7rem;
+    }
+    .main .TextContainer p{
+        font-size: 1.1rem;
+    }
+    .main .ImageContainer{
+        display: none;
+    }
+    .Base h2{
+        font-size: 1.3rem;
+    }
+    .Base .Logs .img{
+        width: 90px;
+    }
+    .slack img{
+        width: 50px;
+    }
+    .Base .Logs .h1, .Base .Logs h1{
+        font-size: 1.8rem;
+    }
+}
+@media (width <= 430px) {
+    
+    .main .TextContainer{
+        padding: 0rem 2rem;
+    }
+    .main .TextContainer h1{
+        font-size: 2.2rem;
+    }
+    .main .TextContainer p{
+        font-size: .9rem;
+    }
+    .main .ImageContainer{
+        display: none;
+    }
 }
