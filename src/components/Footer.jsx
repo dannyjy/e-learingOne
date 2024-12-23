@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <div className='Footer'>
             <aside>
-                <h1 className='footerHanding'>Learn<span>Flek</span></h1>
+                <h1>Learn<span>Flek</span></h1>
                 <p>&copy; 2023 LearnFlek, India, Inc.</p>
                 <p>All Right Reserved</p>
             </aside>

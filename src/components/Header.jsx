@@ -49,20 +49,22 @@ function Nav(){
                 {
                     isMenuOpen && 
                     <article className='menuList'>
-                        <select name="" id="">
+                        <select name="" id="" className='CoursesRepon'>
                             <option value="">Courses</option>
                             <option value="">Software Engineering</option>
                             <option value="">Data Science</option>
                             <option value="">Networking</option>
                         </select>
-                        <div className="child2 ListRespon">
+                        <div className="ListRespon">
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Blogs</a></li>
                                 <li><a href="#">About Us</a></li>
                             </ul>
-                            <button className='btn1'>Log In</button>
-                            <button>Sign Up</button>
+                            <aside>
+                                <button className='btn1'>Log In</button>
+                                <button  className='btn2'>Sign Up</button>
+                            </aside>
                         </div>
                     </article>
                 }

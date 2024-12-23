@@ -58,17 +58,17 @@ body{
     color: #fff;
     font-size: 1.5rem;
 }
-.Nav .child2, .Nav .ListRespon{
+.Nav .child2{
     gap: 1rem;
     display: flex;
     align-items: center;
 }
-.Nav .child2 ul,.Nav .ListRespon ul{
+.Nav .child2 ul{
     gap: 2rem;
     display: flex;
     list-style: none;
 }
-.Nav .child2 ul li a, .Nav .ListRespon ul li a{
+.Nav .child2 ul li a{
     color: #000;
     text-decoration: none;
 }
@@ -112,7 +112,7 @@ body{
     background: #4e4be2;
 }
 .main .ImageContainer{
-    width: 40%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,20 +188,61 @@ body{
     .Nav .child2{
         display: none;
     }
-    .menuList, .Nav .ListRespon{
+    .menuList{
         top: 70px;
         z-index: 1;
-        right: 10px;
+        width: 100%;
+        right: 0px;
         padding: 1rem;
         display: block;
         position: absolute;
-        background: #333;
         border-radius: .4rem;
+        backdrop-filter: blur(10px);
+        background-color: #e3e3e3d2;
+        border: 1px solid #808080;
     }
-    .Nav .ListRespon ul{
-        display: block;
+    .menuList .CoursesRepon{
+        color: #fff;
+        width: 200px;
+        margin: 1rem;
+        border: none;
+        height: 30px;
+        border-radius: 5px;
+        background: #4e4be2;
     }
-    .Nav .ListRespon ul li a{
+    .menuList .ListRespon {
+        width: 200px;
+        text-align: center;
+    }
+    .menuList .ListRespon ul{
+        gap: .5rem;
+    }
+    .menuList .ListRespon ul li{
+        border-radius: 5px;
+        padding: .8rem 1rem;
+        margin-bottom: .5rem;
+        border: 1px solid #808080;
+    }
+    .menuList .ListRespon ul li:hover{
+        color: #fff;
+        background: #99bbe2;
+    }
+    .menuList .ListRespon aside{
+        display: flex;
+        gap: 1.1rem;
+    }
+    .menuList .ListRespon .btn2{
+        border: none;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        padding: .8rem 1rem;
+        background: #ffae00;
+    }
+    .menuList .ListRespon .btn1{
+        border: none;
+        color: #0400ff;
+        background: none;
+        font-size: 1.2rem;
         padding: .8rem 1rem;
     }
     .main{
@@ -214,26 +255,6 @@ body{
         font-size: 1.1rem;
     }
     .main .ImageContainer .ImageBg{
-        width: 320px;
-        height: 320px;
-    }
-    .main .ImageContainer .ImageBg section{
-        width: 280px;
-        height: 280px;
-    }
-    .main .ImageContainer img{
-        width: 250px;
-        height: 250px;
-    }
-}
-@media (width <= 750px){
-    .main .TextContainer h1{
-        font-size: 2.5rem;
-    }
-    .main .TextContainer p{
-        font-size: .9rem;
-    }
-    .main .ImageContainer .ImageBg{
         width: 300px;
         height: 300px;
     }
@@ -244,6 +265,14 @@ body{
     .main .ImageContainer img{
         width: 230px;
         height: 230px;
+    }
+}
+@media (width <= 750px){
+    .main .TextContainer h1{
+        font-size: 2.5rem;
+    }
+    .main .TextContainer p{
+        font-size: .9rem;
     }
     .Base .Logs{
         gap: .8rem;
